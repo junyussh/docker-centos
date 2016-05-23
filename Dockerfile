@@ -1,5 +1,6 @@
 FROM scratch
 MAINTAINER The CentOS Project <cloud-ops@centos.org>
+RUN wget https://github.com/CentOS/sig-cloud-instance-images/blob/0ab04b50ac631d1371a2241171f19655c2870020/docker/c7-docker.tar.xz?raw=true
 ADD c7-docker.tar.xz /
 LABEL name="CentOS Base Image" \
     vendor="CentOS" \
